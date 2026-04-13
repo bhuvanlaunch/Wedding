@@ -18,8 +18,6 @@
 --yellow-bold:#ffd600;
 }
 
-/* RESET */
-
 *{
 margin:0;
 padding:0;
@@ -29,30 +27,31 @@ box-sizing:border-box;
 /* BODY */
 
 body{
+background-color:#0b1021;
 font-family:'Poppins',sans-serif;
 overflow-x:hidden;
 }
 
-/* TEMPLE BACKGROUND */
+/* TEMPLE BACKGROUND (RESTORED ORIGINAL IMAGE) */
 
-.parallax-bg{
+.parallax-bg {
 
-position:fixed;
-top:0;
-left:0;
+position: fixed;
+top: 0;
+left: 0;
 
-width:100%;
-height:100%;
+width: 100%;
+height: 100%;
 
 background-image:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Srirangam_Ranganathaswamy_Temple_Gopuram.jpg");
+linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+url('https://media.istockphoto.com/id/450813423/photo/sri-ranganathaswamy-temple-india.jpg?s=2048x2048&w=is&k=20&c=WOuSmsZ-cIg8r_H9qHmMNvfkCf2R8HQgyyoE8WeNYHQ=');
 
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
 
-z-index:-1;
+z-index: -1;
 
 }
 
@@ -77,7 +76,7 @@ padding:20px;
 width:95%;
 max-width:450px;
 
-background:white;
+background:rgba(255,255,255,0.95);
 
 padding:40px 25px;
 
@@ -87,7 +86,7 @@ text-align:center;
 
 border:2px solid var(--gold);
 
-box-shadow:0px 15px 45px rgba(0,0,0,0.5);
+box-shadow:0 15px 45px rgba(0,0,0,0.6);
 
 }
 
@@ -96,7 +95,6 @@ box-shadow:0px 15px 45px rgba(0,0,0,0.5);
 .cover{
 
 text-align:center;
-
 color:white;
 
 }
@@ -209,6 +207,32 @@ box-shadow:0px 10px 25px rgba(212,175,55,0.9);
 
 }
 
+/* FLOATING LANTERNS */
+
+.lantern{
+
+position:fixed;
+
+font-size:2rem;
+
+animation:float 6s infinite ease-in-out;
+
+opacity:.7;
+
+pointer-events:none;
+
+z-index:2;
+
+}
+
+@keyframes float{
+
+0%,100%{transform:translateY(0);}
+
+50%{transform:translateY(-25px);}
+
+}
+
 /* MOBILE OPTIMIZATION */
 
 @media(max-width:600px){
@@ -234,6 +258,13 @@ padding:30px 15px;
 <body>
 
 <div class="parallax-bg"></div>
+
+<!-- FLOATING LANTERNS -->
+
+<div class="lantern" style="top:15%; left:8%">🏮</div>
+<div class="lantern" style="top:40%; right:10%; animation-delay:2s">🏮</div>
+<div class="lantern" style="top:60%; left:15%; animation-delay:4s">🏮</div>
+
 
 <!-- COVER PAGE -->
 
@@ -387,7 +418,7 @@ From 11:30 AM onwards
 
 <p>
 
-Reception Venue Details (add location if available)
+Reception Venue Details (Add location here if available)
 
 </p>
 

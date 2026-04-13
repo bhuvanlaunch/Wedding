@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,8 +9,8 @@
 <title>Shivaprasad & Mounika Reddy Wedding Invitation</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
- 
-<style> 
+
+<style>
 
 :root{
 --gold:#d4af37;
@@ -17,96 +18,164 @@
 --yellow-bold:#ffd600;
 }
 
+/* RESET */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+/* BODY */
+
 body{
-background-color:#0b1021;
 font-family:'Poppins',sans-serif;
+overflow-x:hidden;
 }
 
-/* Background */
+/* TEMPLE BACKGROUND */
 
 .parallax-bg{
+
 position:fixed;
+top:0;
+left:0;
+
 width:100%;
 height:100%;
 
 background-image:
-linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
-url('https://media.istockphoto.com/id/450813423/photo/sri-ranganathaswamy-temple-india.jpg');
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Srirangam_Ranganathaswamy_Temple_Gopuram.jpg");
 
 background-size:cover;
-background-position:center bottom;
+background-position:center;
+background-repeat:no-repeat;
+
 z-index:-1;
+
 }
 
-/* Sections */
+/* SECTION */
 
 section{
+
 min-height:100vh;
+
 display:flex;
 justify-content:center;
 align-items:center;
+
 padding:20px;
+
 }
 
-/* Card */
+/* CARD */
 
 .card{
-width:90%;
+
+width:95%;
 max-width:450px;
+
 background:white;
+
 padding:40px 25px;
+
 border-radius:20px;
+
 text-align:center;
+
 border:2px solid var(--gold);
-box-shadow:0 15px 45px rgba(0,0,0,0.6);
+
+box-shadow:0px 15px 45px rgba(0,0,0,0.5);
+
 }
 
-/* Typography */
+/* COVER PAGE */
+
+.cover{
+
+text-align:center;
+
+color:white;
+
+}
+
+/* HEADINGS */
 
 h1{
+
 font-family:'Great Vibes';
+
 color:var(--yellow-bold);
-font-size:4.8rem;
+
+font-size:5rem;
+
 text-shadow:3px 3px 12px black;
+
+line-height:1.1;
+
 }
 
 h2{
+
 font-family:'Playfair Display';
+
 color:var(--maroon);
+
 margin-bottom:10px;
+
 }
 
 h3{
+
 color:#b71c1c;
+
 margin-top:20px;
+
 letter-spacing:1px;
+
 }
+
+/* TEXT */
 
 p{
+
 font-size:0.95rem;
+
 margin:6px 0;
+
 }
+
+/* NAME STYLE */
 
 .names-main{
-font-size:1.3rem;
+
+font-size:1.4rem;
+
 color:var(--maroon);
+
 font-weight:600;
+
+margin:8px 0;
+
 }
+
+/* DIVIDER */
 
 .divider{
+
 height:1.5px;
+
 background:var(--gold);
+
 width:50%;
+
 margin:20px auto;
+
 }
 
-/* Gold Button Style */
+/* MAP BUTTON */
 
 .map-button{
 
@@ -118,7 +187,7 @@ padding:12px 28px;
 
 background:linear-gradient(45deg,#d4af37,#ffd700);
 
-color:#fff;
+color:white;
 
 font-weight:600;
 
@@ -138,7 +207,23 @@ transform:translateY(-3px);
 
 box-shadow:0px 10px 25px rgba(212,175,55,0.9);
 
-background:linear-gradient(45deg,#ffd700,#d4af37);
+}
+
+/* MOBILE OPTIMIZATION */
+
+@media(max-width:600px){
+
+h1{
+
+font-size:3.8rem;
+
+}
+
+.card{
+
+padding:30px 15px;
+
+}
 
 }
 
@@ -150,25 +235,38 @@ background:linear-gradient(45deg,#ffd700,#d4af37);
 
 <div class="parallax-bg"></div>
 
-
-<!-- Cover Page -->
+<!-- COVER PAGE -->
 
 <section>
 
-<div style="text-align:center">
+<div class="cover">
 
-<p style="color:white;letter-spacing:6px">
+<p style="letter-spacing:6px">
+
 WEDDING INVITATION
+
 </p>
 
 <h1>
+
 Shivaprasad
+
 <br>&<br>
+
 Mounika Reddy
+
 </h1>
 
-<p style="color:#ffeb3b;font-size:1.2rem">
+<p style="color:#ffeb3b;font-size:1.2rem;margin-top:10px">
+
 29.04.2026 — 03.05.2026
+
+</p>
+
+<p style="margin-top:80px;font-size:0.8rem;opacity:0.8">
+
+Scroll Down to Open Invitation ↓
+
 </p>
 
 </div>
@@ -176,7 +274,7 @@ Mounika Reddy
 </section>
 
 
-<!-- Wedding Section -->
+<!-- WEDDING SECTION -->
 
 <section>
 
@@ -185,44 +283,54 @@ Mounika Reddy
 <h2>Wedding Invitation</h2>
 
 <p>
+
 Together with their families invite you to celebrate the wedding of
+
 </p>
 
 <div class="names-main">
+
 Mounika Reddy
+
 </div>
 
 <p>
+
 D/o Guntika Radha & Guntika Basavreddy
+
 </p>
 
 <p>With</p>
 
 <div class="names-main">
+
 Shivaprasad
+
 </div>
 
 <p>
+
 S/o Geethama & Ayappa
+
 </p>
 
-
 <div class="divider"></div>
-
 
 <h3>Muhurtham</h3>
 
 <p>
+
 Wednesday, 29th April 2026
+
 </p>
 
 <p>
+
 8:37 AM to 10:27 AM
+
 </p>
 
-
 <div class="divider"></div>
-
 
 <p>
 
@@ -234,25 +342,26 @@ Tirumala Tirupati
 
 </p>
 
-
 <a
+
 href="https://maps.app.goo.gl/TGBFSk2J1frzCqFbA"
+
 target="_blank"
+
 class="map-button"
+
 >
 
 📍 View Location Map
 
 </a>
 
-
 </div>
 
 </section>
 
 
-
-<!-- Reception Section -->
+<!-- RECEPTION SECTION -->
 
 <section>
 
@@ -263,21 +372,24 @@ class="map-button"
 <div class="divider"></div>
 
 <h3>
+
 Sunday, 03rd May 2026
+
 </h3>
 
 <p>
+
 From 11:30 AM onwards
+
 </p>
 
 <div class="divider"></div>
 
 <p>
 
-Venue details can be added here
+Reception Venue Details (add location if available)
 
 </p>
-
 
 <p style="margin-top:25px;color:var(--maroon)">
 
@@ -291,4 +403,5 @@ Awaiting your presence & blessings
 
 
 </body>
+
 </html>
